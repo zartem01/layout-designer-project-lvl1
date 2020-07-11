@@ -1,52 +1,98 @@
 :root {
-    --header-height: 70px;
+  --header-height: 70px;
+  --boocking-section-height: 350px;
+  --main-section-width: 1000px;
 }
 
-.display-flex{
-  display: flex;
-}
-
-.landing-text{
+.landing-text {
   font-weight: bold;
   font-size: 16px;
   color: #303846;
   font-family: sans-serif;
 }
 
-body{
-  margin: 0;
+.header {
+  position: fixed;
+  flex-wrap: wrap;
+  height: var(--header-height);
+  background-color: white;
 }
 
-header{
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  height: var(--header-height);
+.logo-name {
+  padding: 0px 0px 0px 10px;
+}
+
+.pt-header{
+  padding-top: var(--header-height);
+}
+
+.section1 {
+  color: white;
+  height: var(--boocking-section-height);
+}
+
+.section1-background{
+  background-image: url(../images/banner.png);
+  background-position: 100% 70%;
+  background-size: cover;
+}
+
+.section1-img{
+  height: 40%;
+}
+
+.section1-text{
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 550;
+}
+
+.section1-btn{
+  color: inherit;
+  background: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.section1-btn:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.about{
+  background: #f7f7f7;
   width: 100%;
 }
 
-header > .display-flex{
+.container{
+  display: flex;
+  width: 100%;
   align-items: center;
-  height: 100%;
 }
 
-.logo-name{
-  padding: 0px 30px 0px 10px;
+.centered-section{
+  display: flex;
+  width: var(--main-section-width);
+  justify-content: space-evenly;
+  padding: 40px;
 }
 
-.logo-img{
-  height: 70%;
-  padding-left: 10px;
+a:link {
+  color: #303846;
 }
 
-header nav ul {
-  list-style: none;
+/* visited link */
+a:visited {
+  color: #303846;
 }
 
-header nav li{
-  padding-right: 20px;
+/* mouse over link */
+a:hover {
+  color: #303846;
 }
 
-main{
-  padding-top: var(--header-height);
+/* selected link */
+a:active {
+  color: #303846;
 }

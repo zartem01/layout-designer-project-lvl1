@@ -8,28 +8,84 @@
   <title>Moon Sea - vaziliybober</title>
 
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/atomic.css">
 </head>
 
-<body class="landing-text">
+<body class="landing-text m-0">
 
-  <header class="display-flex">
+  <header class="header container jc-space-between">
 
-    <div class="display-flex">
-      <img src="images/logo.svg" class="logo-img" alt="company logo">
+    <div class="d-flex h-100 ai-center">
+      <img src="images/logo.svg" class="h-100 pl-10p" alt="company logo">
       <span class="logo-name">Лунное море</span>
     </div>
 
     <nav>
-      <ul class="display-flex">
-        <li>Преимущества</li>
-        <li>О ЖК</li>
-        <li>Места для отдыха</li>
+      <ul class="d-flex ls-none fw-wrap">
+        <li class="pr-20p"><a href="#advantage">Преимущества</a></li>
+        <li class="pr-20p"><a href="#about">О ЖК</a></li>
+        <li class="pr-20p"><a href="#chill">Места для отдыха</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="display-flex">
-    ВАСЯ СОСИ ХУЙ
+  <div class="pt-header"></div>
+
+  <main class="d-flex fd-column ai-center">
+
+    <section class="section1 container section1-background jc-center fd-column w-100">
+      <img src="images/logo.svg" class="section1-img" alt="company logo"><br>
+      <h1 class="m-0 fs-30p">ЖК «Лунное море»</h1>
+      <span class="section1-text">Место, откуда не хочется улетать</span>
+      <button type="button" class="section1-btn mt-30p" name="button">Забронировать</button>
+    </section>
+
+    <!-- section advantage -->
+    <a name="advantage"></a>
+    <section class="centered-section">
+      <article class="w-25">
+        <h2>Уникальный вид</h2>
+        <p class="fw-normal">Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+      </article>
+      <article class="w-25">
+        <h2>Инфраструктура</h2>
+        <p class="fw-normal">Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+      </article>
+      <article class="w-25">
+        <h2>Близость к Москве</h2>
+        <p class="fw-normal">При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+      </article>
+    </section>
+
+    <!-- section about -->
+    <a name="about"></a>
+    <section class="about d-flex jc-center">
+      <div class="centered-section ai-center">
+        <article class="w-50">
+          <h2>О ЖК «Лунное море»</h2>
+          <div class="fw-normal">
+            <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+            <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+          </div>
+        </article>
+        <img src="images/moon-1.jpg" alt="moon 1" class="h-150p">
+      </div>
+    </section>
+
+    <!-- section chiill -->
+    <a name="chill"></a>
+    <section class="chill centered-section ai-center">
+      <img src="images/moon-2.jpg" alt="moon 2" class="h-150p">
+      <article class="w-50">
+        <h2>Места для отдыха</h2>
+        <div class="fw-normal">
+          <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+          <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+        </div>
+      </article>
+    </section>
+
+
   </main>
 
   <footer>
