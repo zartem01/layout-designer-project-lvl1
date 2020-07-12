@@ -14,7 +14,6 @@
 <body class="landing-text m-0">
 
   <header class="header container jc-space-between">
-
     <div class="d-flex h-100 ai-center">
       <img src="images/logo.svg" class="h-100 pl-10p" alt="company logo">
       <span class="logo-name">Лунное море</span>
@@ -25,6 +24,7 @@
         <li class="pr-20p"><a href="#advantage">Преимущества</a></li>
         <li class="pr-20p"><a href="#about">О ЖК</a></li>
         <li class="pr-20p"><a href="#chill">Места для отдыха</a></li>
+        <li class="pr-20p"><a href="#feedback">Форма обратной связи</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
       <img src="images/logo.svg" class="section1-img" alt="company logo"><br>
       <h1 class="m-0 fs-30p">ЖК «Лунное море»</h1>
       <span class="section1-text">Место, откуда не хочется улетать</span>
-      <button type="button" class="section1-btn mt-30p" name="button">Забронировать</button>
+      <button type="button" class="btn sec1-btn mt-30p" name="button">Забронировать</button>
     </section>
 
     <!-- section advantage -->
@@ -59,7 +59,7 @@
 
     <!-- section about -->
     <a name="about"></a>
-    <section class="about d-flex jc-center">
+    <section class="d-flex jc-center bc-l w-100">
       <div class="centered-section ai-center">
         <article class="w-50">
           <h2>О ЖК «Лунное море»</h2>
@@ -86,10 +86,90 @@
     </section>
 
 
+    <!-- feedback form -->
+    <a name="feedback"></a>
+    <section class="container ai-center bc-l w-100 jc-center">
+      <div class="w-500p">
+        <h1 class="ta-center">Оставьте заявку сегодня!</h1>
+        <form>
+          <fieldset class="feedback-form">
+            <legend class="c-g">
+              <h3>Параметры квартиры</h3>
+            </legend>
+            <div class="field">
+              <span class="w-50">Количество комнат:</span>
+              <select class="input w-150p">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <span class="w-50">Отделка:</span>
+              <select class="input w-150p">
+                <option>Без отделки</option>
+                <option>Дуб</option>
+                <option>Сосна</option>
+              </select>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="feedback-form">
+            <legend class="c-g">
+              <h3>Контактная информация</h3>
+            </legend>
+            <article>
+              <div class="field">
+                <span class="w-50">Имя:</span>
+                <input type="text" class="input w-200p">
+              </div>
+              <div class="field">
+                <span class="w-50">Телефон:</span>
+                <input type="number" class="input w-200p">
+              </div>
+              <div class="field">
+                <span class="w-50">E-mail:</span>
+                <input type="text" class="input w-200p">
+              </div>
+            </article>
+          </fieldset>
+        </form>
+
+        <br>
+
+        <button type="button" class="btn feedback-btn mb-20p" name="feedback-btn"><h2 class="p-0 m-0">Отправить</h2></button>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    footer
+  <footer class="container jc-space-evenly bgcolor-ltc color-w h-footer">
+    <div>
+      <div class="d-flex ai-center">
+        <img src="images/logo.svg" class="h-40 pl-10p" alt="company logo">
+        <span class="logo-name">Лунное море</span>
+      </div>
+      <br>
+      <span class="fs-13p pl-15p fw-normal">&copy; 2032 год</span>
+    </div>
+
+    <div>
+      <h3>Проектная документация</h3>
+      <ul class="fs-13p">
+        <li>Скачать</li>
+        <li>Посмтореть на сайте</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>О застройщике</h3>
+      <ul class="fs-13p">
+        <li>Отзывы</li>
+        <li>Сайт компании</li>
+      </ul>
+    </div>
   </footer>
 
 

@@ -1,13 +1,9 @@
-:root {
-  --header-height: 70px;
-  --boocking-section-height: 350px;
-  --main-section-width: 1000px;
-}
+@import url("constant.css");
 
 .landing-text {
   font-weight: bold;
   font-size: 16px;
-  color: #303846;
+  color: var(--landing-text-color);
   font-family: sans-serif;
 }
 
@@ -47,22 +43,21 @@
   font-weight: 550;
 }
 
-.section1-btn{
-  color: inherit;
+.btn{
   background: none;
-  border: 1px solid white;
   padding: 10px;
   border-radius: 7px;
+  border: 1px solid;
 }
 
-.section1-btn:hover{
+.sec1-btn{
+  color: inherit;
+  border-color: inherit;
+}
+
+.sec1-btn:hover{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.about{
-  background: #f7f7f7;
-  width: 100%;
 }
 
 .container{
@@ -79,20 +74,48 @@
 }
 
 a:link {
-  color: #303846;
+  color: var(--landing-text-color);
 }
 
 /* visited link */
 a:visited {
-  color: #303846;
+  color: var(--landing-text-color);
 }
 
 /* mouse over link */
 a:hover {
-  color: #303846;
+  color: var(--landing-text-color);
 }
 
 /* selected link */
 a:active {
-  color: #303846;
+  color: var(--landing-text-color);
+}
+
+.feedback-form{
+  border-color: var(--color-alt);
+  padding: 20px;
+}
+
+.input{
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+.feedback-btn{
+  color: var(--color-alt);
+  border-color: var(--color-alt);
+}
+
+.feedback-btn:hover{
+  cursor: pointer;
+  background-color: rgba(70, 221, 193, 0.3);
+}
+
+.field{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
 }
